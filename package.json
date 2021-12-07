@@ -12,7 +12,9 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prettier": "prettier --write \"**/*.{ts,tsx}\"",
     "android-clean": "cd android && gradlew clean",
-    "android-release-apk": "cd android && gradlew assembleRelease"
+    "android-release-apk": "cd android && gradlew assembleRelease",
+    "detox:build:android": "yarn detox build -c android.emu.debug",
+    "detox:test:android": "yarn detox test -c android.emu.debug"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.11",
@@ -33,11 +35,14 @@
     "@react-native-community/eslint-config": "^3.0.1",
     "@testing-library/react-hooks": "^7.0.2",
     "@testing-library/react-native": "^9.0.0",
+    "@types/detox": "^18.1.0",
+    "@types/jasmine": "^3.10.2",
     "@types/jest": "^27.0.3",
     "@types/react-native": "^0.66.8",
     "@types/react-test-renderer": "^17.0.1",
     "babel-jest": "^27.4.2",
     "babel-plugin-root-import": "^6.6.0",
+    "detox": "^19.3.0",
     "eslint": "^8.4.0",
     "jest": "^27.4.3",
     "jest-sonar-reporter": "^2.0.0",
