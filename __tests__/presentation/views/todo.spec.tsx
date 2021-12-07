@@ -1,9 +1,11 @@
 import React from 'react';
-import { render, fireEvent, act } from '@testing-library/react-native';
+import { fireEvent, act } from '@testing-library/react-native';
 
 import { TodoView } from '~/presentation/views/Todo';
 import { Todo } from '~/domain/models/general/todo';
-import { mockFindAll } from 'tests/testUtils/mocks/todoUseCase';
+import { mockFindAll } from 'tests/testUtils/mocks/hooks/todoUseCase';
+import { render } from 'tests/testUtils/render';
+import { mockShowSuccess } from 'tests/testUtils/mocks/hooks/toast';
 
 describe('Presentation - Todo', () => {
   it('should render the list', async () => {
@@ -48,5 +50,19 @@ describe('Presentation - Todo', () => {
     unmount();
 
     expect(mockSetTodos).not.toHaveBeenCalled();
+  });
+
+  it('should render the toast button', async () => {
+    const { findByText } = render(<TodoView />);
+    const button = await findByText('Show toast');
+    expect(button).toBeTruthy();
+  });
+
+  it('should call the show success with correct values', async () => {
+    const { findByText } = render(<TodoView />);
+    const button = await findByText('Show toast');
+    fireEvent.press(button);
+
+    expect(mockShowSuccess).toHaveBeenCalledWith('Test toast');
   });
 });
