@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="C:\Temp\POCCleanArchitecture\__tests__\application\usecases\todoUseCase.spec.ts">
+    <testCase name="Application - UseCases - TodoUseCase should call todoApiClient with correct values" duration="11"/>
+    <testCase name="Application - UseCases - TodoUseCase should throw with todoApiClient throws" duration="64"/>
+    <testCase name="Application - UseCases - TodoUseCase should return the values from todoApiClient" duration="4"/>
+  </file>
+  <file path="C:\Temp\POCCleanArchitecture\__tests__\infra\adapters\axiosApiClient.spec.ts">
+    <testCase name="Axios API Adapter get should return a valid data from response" duration="13"/>
+    <testCase name="Axios API Adapter get should return a valid status a success response" duration="2"/>
+    <testCase name="Axios API Adapter get should return a valid statusText a success response" duration="3"/>
+    <testCase name="Axios API Adapter get should return a valid total count" duration="3"/>
+    <testCase name="Axios API Adapter get should return all request headers" duration="5"/>
+    <testCase name="Axios API Adapter get should return total 0 if no header was found" duration="2"/>
+    <testCase name="Axios API Adapter get should return total as number if header was returned as string" duration="3"/>
+    <testCase name="Axios API Adapter delete should return a valid data from response" duration="3"/>
+    <testCase name="Axios API Adapter delete should return a valid status a success response" duration="2"/>
+    <testCase name="Axios API Adapter delete should return a valid statusText a success response" duration="2"/>
+    <testCase name="Axios API Adapter delete should return total 0 on delete" duration="2"/>
+    <testCase name="Axios API Adapter delete should return all request headers" duration="3"/>
+    <testCase name="Axios API Adapter post should return a valid data from response" duration="1"/>
+    <testCase name="Axios API Adapter post should return a valid status a success response" duration="2"/>
+    <testCase name="Axios API Adapter post should return a valid statusText a success response" duration="2"/>
+    <testCase name="Axios API Adapter post should return total 0 on post" duration="1"/>
+    <testCase name="Axios API Adapter post should return all request headers" duration="2"/>
+    <testCase name="Axios API Adapter put should return a valid data from response" duration="2"/>
+    <testCase name="Axios API Adapter put should return a valid status a success response" duration="1"/>
+    <testCase name="Axios API Adapter put should return a valid statusText a success response" duration="2"/>
+    <testCase name="Axios API Adapter put should return total 0 on put" duration="1"/>
+    <testCase name="Axios API Adapter put should return all request headers" duration="2"/>
+    <testCase name="Axios API Adapter patch should return a valid data from response" duration="20"/>
+    <testCase name="Axios API Adapter patch should return a valid status a success response" duration="1"/>
+    <testCase name="Axios API Adapter patch should return a valid statusText a success response" duration="4"/>
+    <testCase name="Axios API Adapter patch should return total 0 on patch" duration="1"/>
+    <testCase name="Axios API Adapter patch should return all request headers" duration="1"/>
+  </file>
+  <file path="C:\Temp\POCCleanArchitecture\__tests__\main\factories\usecases\todo\todoUseCase.spec.ts">
+    <testCase name="TodoUseCase Factory should return a valid ITodoUseCase" duration="6"/>
+  </file>
+  <file path="C:\Temp\POCCleanArchitecture\__tests__\main\factories\infra\todo\todoApiClient.spec.ts">
+    <testCase name="TodoApiClient Factory should return a valid ITodoApiClient" duration="6"/>
+  </file>
+  <file path="C:\Temp\POCCleanArchitecture\__tests__\main\hooks\todo.spec.ts">
+    <testCase name="Todo hook should return a valid ITodoUseCase" duration="633"/>
+  </file>
+  <file path="C:\Temp\POCCleanArchitecture\__tests__\infra\adapters\todo\todoApiClient.spec.ts">
+    <testCase name="Infra - adapters - todo - TodoApiClient should call apiClient.get with correct values" duration="12"/>
+    <testCase name="Infra - adapters - todo - TodoApiClient should throw with apiClient.get throws" duration="22"/>
+    <testCase name="Infra - adapters - todo - TodoApiClient should return the date object from apiClient" duration="3"/>
+  </file>
+  <file path="C:\Temp\POCCleanArchitecture\__tests__\presentation\components\todo\todoItem.spec.tsx">
+    <testCase name="Presentation - components - todo - TodoItem should render the title" duration="649"/>
+  </file>
+  <file path="C:\Temp\POCCleanArchitecture\__tests__\sanity.spec.ts">
+    <testCase name="Teste Teste" duration="4"/>
+  </file>
+  <file path="C:\Temp\POCCleanArchitecture\__tests__\main\factories\infra\apiClient.spec.ts">
+    <testCase name="ApiClient Factory should return a valid IApiClient" duration="3"/>
+  </file>
+  <file path="C:\Temp\POCCleanArchitecture\__tests__\main\app.spec.tsx">
+    <testCase name="Main - App should render the SafeArea" duration="1181"/>
+  </file>
+  <file path="C:\Temp\POCCleanArchitecture\__tests__\presentation\views\todo.spec.tsx">
+    <testCase name="Presentation - Todo should render the list" duration="1343"/>
+    <testCase name="Presentation - Todo not render if the component is unmounted" duration="6"/>
+  </file>
+</testExecutions>

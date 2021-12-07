@@ -1,0 +1,49 @@
+{
+  "name": "poccleanarchitecture",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "test:coverage": "yarn test --coverage",
+    "test:watch": "yarn test --watch",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "prettier": "prettier --write \"**/*.{ts,tsx}\"",
+    "android-clean": "cd android && gradlew clean",
+    "android-release-apk": "cd android && gradlew assembleRelease"
+  },
+  "dependencies": {
+    "@react-native-community/masked-view": "^0.1.11",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/stack": "^6.0.11",
+    "axios": "^0.24.0",
+    "react": "17.0.2",
+    "react-native": "0.66.3",
+    "react-native-gesture-handler": "^2.1.0",
+    "react-native-reanimated": "^2.2.4",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/runtime": "^7.16.3",
+    "@react-native-community/eslint-config": "^3.0.1",
+    "@testing-library/react-native": "^9.0.0",
+    "@types/jest": "^27.0.3",
+    "@types/react-native": "^0.66.8",
+    "@types/react-test-renderer": "^17.0.1",
+    "babel-jest": "^27.4.2",
+    "babel-plugin-root-import": "^6.6.0",
+    "eslint": "^8.4.0",
+    "jest": "^27.4.3",
+    "jest-sonar-reporter": "^2.0.0",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-test-renderer": "17.0.2",
+    "typescript": "^4.5.2"
+  },
+  "resolutions": {
+    "@types/react": "^17"
+  }
+}
