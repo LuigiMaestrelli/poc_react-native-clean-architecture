@@ -1,5 +1,5 @@
 import React, { createContext, useCallback } from 'react';
-import Toast, { SuccessToast } from 'react-native-toast-message';
+import Toast from 'react-native-toast-message';
 
 type ToastProviderType = {
   children: React.ReactElement;

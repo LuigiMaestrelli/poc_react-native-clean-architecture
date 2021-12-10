@@ -61,3 +61,4 @@ buck-out/
 
 #tests
 coverage
+test-report.xml

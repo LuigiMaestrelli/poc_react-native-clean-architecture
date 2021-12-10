@@ -30,7 +30,6 @@
     "@testing-library/react-hooks": "^7.0.2",
     "@testing-library/react-native": "^9.0.0",
     "@types/detox": "^18.1.0",
-    "@types/jasmine": "^3.10.2",
     "@types/jest": "^27.0.3",
     "@types/react-native": "^0.66.8",
     "@types/react-test-renderer": "^17.0.1",
